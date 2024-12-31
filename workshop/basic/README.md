@@ -69,5 +69,16 @@ Access to Airflow webserver
 
 ## 6. Delete all
 ```
-$docker compose down --volumes --rmi all
+$docker compose down --volumes --remove-orphans
 ```
+
+## 7. Start all again
+* Change `AIRFLOW__CORE__LOAD_EXAMPLES: 'false'`
+  * Not download example
+
+```
+$docker compose up -d
+$docker compose ps  
+```
+
+## Ready to create DAG !!
