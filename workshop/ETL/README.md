@@ -42,6 +42,7 @@ Access to dashboard
 
 
 ## 3. Initial data for test
+* Random data
 ```
 $pip install -r requirements.txt
 $python 1-setup-data.py
