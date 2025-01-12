@@ -1,1 +1,7 @@
+# numpy==1.23.5
 mysql-connector-python
+apache-airflow
+SQLAlchemy
+
+
+# https://stackoverflow.com/questions/77364550/attributeerror-module-pkgutil-has-no-attribute-impimporter-did-you-mean

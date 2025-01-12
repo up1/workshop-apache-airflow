@@ -47,7 +47,12 @@ $pip install -r requirements.txt
 $python 1-setup-data.py
 ```
 
-## 4. DAG with Apache Airflow
+## 4. Create dashboard in Superset
+
+Access to dashboard
+* http://localhost:8088
+
+## 5. DAG with Apache Airflow
 * TODO
 
 
