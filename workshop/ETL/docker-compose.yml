@@ -1,0 +1,23 @@
+services:
+  mysql:
+    image: mysql:9
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql/table.sql:/docker-entrypoint-initdb.d/1.sql
+      - ./data:/var/lib/mysql
+
+  superset:
+    build:
+      context: ./superset
+      dockerfile: Dockerfile
+    container_name: superset
+    environment:
+      SUPERSET_SECRET_KEY: 123abc
+    ports:
+      - 8088:8088
