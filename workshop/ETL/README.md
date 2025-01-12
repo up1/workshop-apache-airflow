@@ -29,9 +29,6 @@ $superset db upgrade
 
 // Initial superset
 $superset init
-
-// Install MySQL
-$pip install mysqlclient
 ```
 
 Access to dashboard
@@ -44,7 +41,13 @@ Access to dashboard
         * password=password
 
 
-## 3. DAG with Apache Airflow
+## 3. Initial data for test
+```
+$pip install -r requirements.txt
+$python 1-setup-data.py
+```
+
+## 4. DAG with Apache Airflow
 * TODO
 
 
@@ -54,3 +57,6 @@ Access to dashboard
 ```
 $docker builder prune
 ```
+
+### Reference Websites
+* https://superset.apache.org/docs/configuration/databases/
